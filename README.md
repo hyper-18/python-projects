@@ -59,3 +59,35 @@ A Python-based command-line application that evaluates password strength using p
 bash
 python main.py
 ==================================================
+## Project 3: Quiz Application
+
+A Python-based command-line quiz application featuring multiple-choice questions, difficulty levels, and timed answers.
+
+### Features
+- 15 multiple-choice questions.
+- Easy, Medium, and Hard difficulty levels.
+- Randomized question order.
+- Answer validation.
+- 15-second timer per question.
+- Automatic score calculation.
+- Correct answer display.
+- Final percentage and performance feedback.
+- Replay functionality.
+
+### Technologies
+- Python
+- Lists and Dictionaries
+- Functions
+- Loops and Conditional Statements
+- Random Module
+- Time Module
+- Windows `msvcrt` Module
+
+### How to Run
+
+1. Open the `quiz-application` folder.
+2. Run:
+
+bash
+python main.py
+==================================================
