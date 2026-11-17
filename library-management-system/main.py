@@ -1,9 +1,12 @@
 from book import Book
 from library import Library
 
+
 library = Library()
 
+
 while True:
+
     print("\n===== LIBRARY MANAGEMENT SYSTEM =====")
     print("1. Add Book")
     print("2. View Books")
@@ -13,9 +16,11 @@ while True:
     print("6. Delete Book")
     print("7. Exit")
 
-    choice = input("Enter your choice: ").strip()
+    choice = input("\nEnter your choice: ").strip()
 
+    # Add Book
     if choice == "1":
+
         title = input("Enter book title: ").strip()
         author = input("Enter author: ").strip()
         isbn = input("Enter ISBN: ").strip()
@@ -27,10 +32,14 @@ while True:
         book = Book(title, author, isbn)
         library.add_book(book)
 
+    # View Books
     elif choice == "2":
+
         library.view_books()
 
+    # Search Book
     elif choice == "3":
+
         search_term = input("Enter title or author: ").strip()
 
         if not search_term:
@@ -39,7 +48,9 @@ while True:
 
         library.search_book(search_term)
 
+    # Issue Book
     elif choice == "4":
+
         isbn = input("Enter ISBN to issue: ").strip()
 
         if not isbn:
@@ -48,7 +59,9 @@ while True:
 
         library.issue_book(isbn)
 
+    # Return Book
     elif choice == "5":
+
         isbn = input("Enter ISBN to return: ").strip()
 
         if not isbn:
@@ -57,7 +70,9 @@ while True:
 
         library.return_book(isbn)
 
+    # Delete Book
     elif choice == "6":
+
         isbn = input("Enter ISBN to delete: ").strip()
 
         if not isbn:
@@ -66,9 +81,12 @@ while True:
 
         library.delete_book(isbn)
 
+    # Exit
     elif choice == "7":
+
         print("Thank you for using Library Management System!")
         break
 
     else:
+
         print("Invalid choice! Please try again.")
