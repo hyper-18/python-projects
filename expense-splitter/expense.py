@@ -8,10 +8,9 @@ class Expense:
 
     def display_expense(self):
 
-        print("\nExpense Details")
-        print("--------------------")
+        print("\n----------------------------")
         print("Description:", self.description)
-        print("Amount: ₹", self.amount)
+        print(f"Amount: ₹{self.amount:.2f}")
         print("Paid By:", self.paid_by)
         print("Participants:", ", ".join(self.participants))
-        print("--------------------")
+        print("----------------------------")
