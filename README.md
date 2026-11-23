@@ -371,3 +371,205 @@ Through this project, I practised:
 **API:** Open-Meteo  
 **Difficulty:** Beginner to Intermediate
 ====================================================
+# Expense Splitter
+
+A command-line Python application that helps a group of people manage shared expenses, calculate individual balances, and determine who owes whom.
+
+## Features
+
+- Add and manage participants.
+- Add shared expenses.
+- Split expenses equally among selected participants.
+- View all recorded expenses.
+- Calculate individual balances.
+- Generate settlement suggestions.
+- Edit existing expenses.
+- Delete expenses.
+- Save records automatically using JSON.
+- Load previously saved data when the application starts.
+- Input validation and error handling.
+
+## Project Structure
+
+```text
+expense-splitter/
+│
+├── main.py
+├── expense.py
+├── splitter.py
+├── data.json
+└── README.md
+```
+
+## Technologies Used
+
+- Python
+- Object-Oriented Programming (OOP)
+- JSON
+- File Handling
+- Lists and Dictionaries
+- Exception Handling
+
+## How to Run
+
+**1. Clone the repository**
+
+```bash
+git clone YOUR_REPOSITORY_URL
+```
+
+**2. Navigate to the project folder**
+
+```bash
+cd expense-splitter
+```
+
+**3. Run the application**
+
+```bash
+python main.py
+```
+
+## How It Works
+
+1. Add participants to the group.
+2. Record expenses and specify who paid.
+3. Select the participants sharing each expense.
+4. The application calculates individual balances.
+5. View settlement suggestions to determine who owes money.
+6. Your records are automatically saved in `data.json`.
+
+## Concepts Practiced
+
+- Classes and Objects
+- Object-Oriented Programming
+- Functions and Modules
+- Lists and Dictionaries
+- JSON Serialization and Deserialization
+- File Handling
+- CRUD Operations
+- Input Validation
+- Exception Handling
+
+## Current Limitations
+
+- Expenses are divided equally among selected participants.
+- Unequal expense splitting is not supported.
+- Settlement suggestions are calculated using net balances.
+- Small floating-point rounding differences may occur.
+
+## Learning Outcome
+
+This project helped me understand how to build a multi-file Python application, manage shared financial records, implement CRUD operations, calculate balances, and maintain persistent data using JSON.
+====================================================
+# Student Grade Management System
+
+A command-line Python application designed to manage student records, store subject-wise marks, calculate percentages, and generate student report cards.
+
+## Features
+
+- Add new students.
+- View all registered students.
+- Search students using roll numbers.
+- Add subject-wise marks.
+- Generate individual report cards.
+- Calculate total marks and percentages.
+- Automatically assign grades.
+- Update student names and roll numbers.
+- Update existing subject marks.
+- Delete student records.
+- Sort students by name or percentage.
+- Display class performance statistics.
+- Automatically save and load records using JSON.
+- Input validation and error handling.
+
+## Project Structure
+
+```text
+student-grade-management/
+│
+├── main.py
+├── student.py
+├── students.json
+└── README.md
+```
+
+## Technologies Used
+
+- Python
+- Object-Oriented Programming (OOP)
+- JSON
+- File Handling
+- Dictionaries
+- Lists
+- Lambda Functions
+- Exception Handling
+
+## How to Run
+
+**1. Clone the repository**
+
+```bash
+git clone YOUR_REPOSITORY_URL
+```
+
+**2. Navigate to the project folder**
+
+```bash
+cd student-grade-management
+```
+
+**3. Run the application**
+
+```bash
+python main.py
+```
+
+## How It Works
+
+1. Add students using their names and roll numbers.
+2. Enter marks for different subjects.
+3. Generate individual student report cards.
+4. View calculated totals, percentages, and grades.
+5. Update or delete student records when required.
+6. Sort students based on names or academic performance.
+7. View overall class performance statistics.
+
+All student records are automatically saved in `students.json` and loaded when the application starts.
+
+## Grading System
+
+| Percentage | Grade |
+|---|---|
+| 90–100% | A+ |
+| 80–89% | A |
+| 70–79% | B |
+| 60–69% | C |
+| 50–59% | D |
+| Below 50% | F |
+
+## Concepts Practiced
+
+- Classes and Objects
+- Object-Oriented Programming
+- Functions and Modules
+- Dictionaries and Nested Dictionaries
+- JSON Serialization and Deserialization
+- File Handling
+- CRUD Operations
+- Sorting using Lambda Functions
+- Exception Handling
+- Data Persistence
+
+## Current Limitations
+
+- Each subject has a maximum of 100 marks.
+- All subjects have equal weightage.
+- Percentage is calculated using the average of entered subjects.
+- Data is stored locally in a JSON file.
+- No database or authentication system is implemented.
+
+## Learning Outcome
+
+This project helped me understand how to build a student management application using Python, implement CRUD operations, work with JSON files, perform calculations, sort records, and maintain persistent data
+====================================================
